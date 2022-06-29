@@ -61,7 +61,7 @@ body {
 }
 
 table {
-  width: 50%;
+  width: 70%;
   border: 1px solid black;
   border-collapse: collapse;
   text-align: center;
@@ -71,6 +71,8 @@ table {
 table thead {
   background-color: white;
   color: black;
+  width: 50px;
+  height: 40px;
 }
 
 table thead th {
@@ -84,7 +86,9 @@ table tbody tr:nth-child(odd) {
 table tbody tr {
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
+  height: 40px;
 }
+
 a { 
   text-decoration: none;
   color:white;

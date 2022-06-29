@@ -8,10 +8,34 @@ export default {
       news_link: "",
       new_date: "",
       historicos: [
-        {id:"" ,nome: "livro1",autor:"ronaldo",link:"link1", date:"10/08/2000"},
-        {id:"",nome: "livro2",autor:"ronaldo2",link:"link2", date:"10/08/2050"},
-        {id:"",nome: "livro3",autor:"ronaldo3",link:"link3", date:"10/08/20283"},
-        {id:"",nome: "livro4",autor:"ronaldo4",link:"link4", date:"10/08/9992"},
+        {
+          id: "",
+          nome: "livro1",
+          autor: "ronaldo",
+          link: "link1",
+          date: "10/08/2000",
+        },
+        {
+          id: "",
+          nome: "livro2",
+          autor: "ronaldo2",
+          link: "link2",
+          date: "10/08/2050",
+        },
+        {
+          id: "",
+          nome: "livro3",
+          autor: "ronaldo3",
+          link: "link3",
+          date: "10/08/20283",
+        },
+        {
+          id: "",
+          nome: "livro4",
+          autor: "ronaldo4",
+          link: "link4",
+          date: "10/08/9992",
+        },
       ],
     };
   },
@@ -23,7 +47,7 @@ export default {
         nome: this.new_historico,
         autor: this.news_autor,
         link: this.news_link,
-        date: this .new_date,
+        date: this.new_date,
       });
     },
   },
@@ -35,8 +59,7 @@ export default {
       <h2>Histórico</h2>
     </div>
   </div>
-  <div class="form-input">
-  </div>
+  <div class="form-input"></div>
   <div class="list-items">
     <table>
       <thead>
