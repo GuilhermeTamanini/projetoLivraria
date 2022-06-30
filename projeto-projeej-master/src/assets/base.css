@@ -35,9 +35,8 @@ body {
 }
 
 .form-input input {
-  width: 50%;
+  width: 100%;
   border: 1px solid black;
-  border-radius: 10px;
   padding: 0 1rem;
   height: 40px;
 
@@ -45,7 +44,6 @@ body {
 
 .form-input button {
   height: 40px;
-  margin-left: 1%;
   background-color: black;
   font-weight: bold;
   color: white;
@@ -57,10 +55,10 @@ body {
 .list-items {
   display: flex;
   justify-content: center;
-  margin: 2rem 0;
+  
 }
 
-table {
+/* table {
   width: 70%;
   border: 1px solid black;
   border-collapse: collapse;
@@ -92,4 +90,4 @@ table tbody tr {
 a { 
   text-decoration: none;
   color:white;
-}
+} */

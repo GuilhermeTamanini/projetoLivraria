@@ -78,6 +78,7 @@ export default {
 };
 </script>
 <template>
+<h1>Editora</h1>
   <div class="container">
     <div class="title"></div>
   </div>
@@ -143,5 +144,8 @@ export default {
 }
 .table {
   background-color: white;
+}
+h1 {
+    color: white;
 }
 </style>

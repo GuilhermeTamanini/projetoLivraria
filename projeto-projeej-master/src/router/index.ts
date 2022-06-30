@@ -4,10 +4,16 @@ import LivrosView from "../views/LivrosView.vue";
 import HistoricoView from "../views/HistoricoView.vue";
 import CadastroView from "../views/CadastroView.vue";
 import EntreView from "../views/EntreView.vue";
+import EditoraView from "../views/EditoraView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
+    {
+      path: "/editora",
+      name: "editora",
+      component: EditoraView,
+    },
     {
       path: "/cadastros",
       name: "cadastros",
