@@ -1,52 +1,69 @@
 <template>
-  <div class="formulario">
-    <form action="login">
-      <h2>Entre</h2>
-      <input type="email" placeholder="E-mail" />
-      <input type="text" placeholder="Senha" />
-      <button>Entrar</button>
+  <div id="form-cadastro">
+    <form class="form-cadastro">
+      <h2>Cadastro</h2>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Nome</label>
+        <input
+          type="text"
+          class="form-control"
+          id="exampleInputEmail1"
+          aria-describedby="emailHelp"
+          placeholder="Nome"
+        />
+        <label for="exampleInputEmail1" class="form-label">Data de nascimento</label>
+        <input
+          type="date"
+          class="form-control"
+          id="exampleInputEmail1"
+          aria-describedby="emailHelp"
+          placeholder="Data de nascimento"
+        />
+        <label for="exampleInputEmail1" class="form-label">E-mail</label>
+        <input
+          type="email"
+          class="form-control"
+          id="exampleInputEmail1"
+          aria-describedby="emailHelp"
+          placeholder="email"
+        />
+        <div id="emailHelp" class="form-text">
+          Nós nunca compartilharemos seu e-mail com ninguem(Confia)
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Senha</label>
+        <input
+          type="password"
+          class="form-control"
+          id="exampleInputPassword1"
+          placeholder="senha"
+        />
+      </div>
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+        <label class="form-check-label" for="exampleCheck1">Lembrar-me</label>
+        <label class="cadastro1" for=""
+          ><RouterLink to="/cadastros">Login</RouterLink></label
+        >
+      </div>
+      <button type="submit" class="btn btn-primary">login</button>
     </form>
   </div>
 </template>
 <style>
-body {
-  background-image: url(https://images2.alphacoders.com/261/thumb-1920-26102.jpg);
-}
-.formulario {
+#form-cadastro {
   display: flex;
   justify-content: center;
-  margin: 1px;
-  padding-top: 100px;
-  color: rgb(212, 212, 212);
+  align-items: center;
 }
-form h2 {
-  color: rgb(255, 255, 255);
-  display: flex;
-  justify-content: center;
+.cadastro1 {
+  padding-left: 600px;
 }
-
-form {
-  border: solid 1px black;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
+.form-cadastro {
   background-color: black;
-  box-shadow: black;
-}
-.formulario input {
-  margin: 10px;
-}
-input {
-  border: 1px;
-  border-radius: 5px;
-  padding: 5px;
-}
-button {
-  margin-left: 50px;
-  border: 1px;
-  border-radius: 10px;
-  padding: 5px;
-  width: 100px;
+  color: white;
+  width: 850px;
+  height: 500px;
 }
 </style>

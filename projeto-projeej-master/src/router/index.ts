@@ -5,10 +5,16 @@ import HistoricoView from "../views/HistoricoView.vue";
 import CadastroView from "../views/CadastroView.vue";
 import EntreView from "../views/EntreView.vue";
 import EditoraView from "../views/EditoraView.vue";
+import CategoriaView from "../views/CategoriaView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
+    {
+      path:"/categorias",
+      name:"categorias",
+      component: CategoriaView,
+    },
     {
       path: "/editora",
       name: "editora",

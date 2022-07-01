@@ -3,10 +3,10 @@ import { v4 as uuid } from "uuid";
 export default {
   data() {
     return {
-      novas_editoras: "",
+      novas_categorias: "",
       cadastros: [
         {
-          editoras:"Jefferson"
+          categorias:"Jefferson"
         },
       ],
     };
@@ -17,9 +17,9 @@ export default {
         const novo_id = uuid();
         this.cadastros.push({
           id: novo_id,
-          editoras: this.novas_editoras,
+          categorias: this.novas_categorias,
         });
-        this.nova_editora = "";
+        this.novas_categorias = "";
       }
     },
     excluir(cadastro) {
@@ -36,8 +36,8 @@ export default {
   <div class="form-input">
     <input
       type="text"
-      placeholder="Nome da editora"
-      v-model="novas_editoras"
+      placeholder="Nome da categoria"
+      v-model="novas_categorias"
     />
     <button @click="salvar">salvar</button>
   </div>
@@ -46,14 +46,14 @@ export default {
       <thead>
         <tr>
           <!-- <th scope="col">ID</th> -->
-          <th scope="col">Editoras</th>
+          <th scope="col">Categorias</th>
           <th id="excluir-editora" scope="col">Excluir</th>
         </tr>
       </thead>
       <tbody>
         <tr v-for="cadastro in cadastros" :key="cadastro.id">
           <!-- <td scope="row">{{ cadastro.id }}</td> -->
-          <td>{{ cadastro.editoras }}</td>
+          <td>{{ cadastro.categorias }}</td>
           <td>
             <button @click="excluir(cadastro)">Excluir</button>
           </td>
@@ -74,6 +74,6 @@ td button{
   text-align: center;
 }
 #excluir-editora {
-  padding-left:50px 
+  padding-left:7px 
 }
 </style>

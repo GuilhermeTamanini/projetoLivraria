@@ -7,6 +7,7 @@ export default {
       nova_categoria: "",
       novo_autor: "",
       novo_preco: "",
+      nova_editora: "",
       capa_traz: "",
       capa_frente: "",
       cadastros: [
@@ -15,6 +16,7 @@ export default {
           nome: "cadastro 1",
           categoria: "Isekai",
           autor: "douglas",
+          editora: "Jefferson",
           preco: "10pila",
           frente: "",
           traz: "",
@@ -24,6 +26,7 @@ export default {
           nome: "cadastro 2",
           categoria: "Fantasia",
           autor: "geraldo",
+          editora: "Jefferson",
           preco: "10pila",
           frente: "",
           traz: "",
@@ -33,6 +36,7 @@ export default {
           nome: "cadastro 3",
           categoria: "Game",
           autor: "lucas",
+          editora: "Jefferson",
           preco: "10pila",
           frente: "",
           traz: "",
@@ -42,6 +46,7 @@ export default {
           nome: "cadastro 4",
           categoria: "???",
           autor: "antony",
+          editora: "Jefferson",
           preco: "10pila",
           frente: "",
           traz: "",
@@ -59,6 +64,7 @@ export default {
           categoria: this.nova_categoria,
           autor: this.novo_autor,
           preco: this.novo_preco,
+          editora: this.nova_editora,
           traz: this.capa_traz,
           frente: this.capa_frente,
         });
@@ -66,6 +72,7 @@ export default {
         this.nova_categoria = "";
         this.novo_autor = "";
         this.novo_preco = "";
+        this.nova_editora ="";
         this.capa_traz = "";
         this.capa_frente = "";
       }
@@ -87,12 +94,36 @@ export default {
       placeholder="Insira o nome dos livros"
       v-model="novo_cadastro"
     />
-    <input
-      type="text"
-      placeholder="Insira a categoria"
+    <select
+      class="form-select"
+      aria-label="Default select example"
       v-model="nova_categoria"
-    />
-    <input type="text" placeholder="Insira o autor" v-model="novo_autor" />
+    >
+      <option selected>Categoria</option>
+      <option value="Categoria1">Categoria1</option>
+      <option value="Categoria2">Categoria2</option>
+      <option value="Categoria3">Categoria3</option>
+    </select>
+    <select
+      class="form-select"
+      aria-label="Default select example"
+      v-model="novo_autor"
+    >
+      <option selected>Autor</option>
+      <option value="Autor1">Autor1</option>
+      <option value="Autor2">Autor2</option>
+      <option value="Autor3">Autor3</option>
+    </select>
+    <select
+      class="form-select"
+      aria-label="Default select example"
+      v-model="nova_editora"
+    >
+      <option selected>Editora</option>
+      <option value="Editora 1">Editora1</option>
+      <option value="Editora 2">Editora2</option>
+      <option value="Editora 3">Editora3</option>
+    </select>
     <input type="text" placeholder="Insira o preço" v-model="novo_preco" />
     <input
       type="text"
@@ -110,10 +141,11 @@ export default {
     <table class="table table-striped">
       <thead>
         <tr>
-          <th scope="col">ID</th>
+          <!-- <th scope="col">ID</th> -->
           <th scope="col">Livro</th>
           <th scope="col">Categoria</th>
           <th scope="col">Autor</th>
+          <th scope="col">Editora</th>
           <th scope="col">Preço</th>
           <th scope="col">Img traz</th>
           <th scope="col">Img da frente</th>
@@ -122,10 +154,11 @@ export default {
       </thead>
       <tbody>
         <tr v-for="cadastro in cadastros" :key="cadastro.id">
-          <td scope="row">{{ cadastro.id }}</td>
+          <!-- <td scope="row">{{ cadastro.id }}</td> -->
           <td>{{ cadastro.nome }}</td>
           <td>{{ cadastro.categoria }}</td>
           <td>{{ cadastro.autor }}</td>
+          <td>{{ cadastro.editora }}</td>
           <td>{{ cadastro.preco }}</td>
           <td>{{ cadastro.traz }}</td>
           <td>{{ cadastro.frente }}</td>
@@ -139,9 +172,12 @@ export default {
 </template>
 <style>
 #excluir {
-  padding-left: 90px;
+  padding-left: 15px;
 }
 .table {
   background-color: white;
+}
+td button{
+  background-color: rgb(187, 184, 184);
 }
 </style>

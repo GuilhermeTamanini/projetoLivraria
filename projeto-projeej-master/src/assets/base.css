@@ -44,12 +44,13 @@ body {
 
 .form-input button {
   height: 40px;
-  background-color: black;
+  background-color: rgb(255, 255, 255);
   font-weight: bold;
-  color: white;
+  color: rgb(0, 0, 0);
   border: 1px solid black;
   border-radius: 10px;
   width: 15%;
+  margin: 4px;
 }
 
 .list-items {

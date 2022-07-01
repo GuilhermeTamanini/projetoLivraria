@@ -50,14 +50,17 @@
       />
     </div>
   </div>
-  <div class="livros7">
-    <div class="livro6">
-      <img src="https://br.web.img2.acsta.net/pictures/14/11/14/13/47/211678.jpg" alt="" />
+  <div class="livros2">
+    <div class="livro7">
+      <img
+        src="https://www.editorajuspodivm.com.br/cdn/imagens/produtos/original/lingua-portuguesa-para-concursos-2021-bd2e.png"
+        alt=""
+      />
     </div>
 
     <div class="livro8">
-      <img src="https://static3.tcdn.com.br/img/img_prod/400550/biblia_minecraft_1404_1_e32c79b0b4488cfd10ffb705de84f499.jpg" alt="" />
-    </div>
+      <img src="" alt="">
+</div>
   </div>
 </template>
 
@@ -68,6 +71,19 @@
   display: flex;
   text-align: center;
 }
+.livros2 {
+  color: white;
+  padding: 10px;
+  display: flex;
+  text-align: center;
+}
+.livros2 img {
+  width: 300px;
+  height:350px;
+  display: inline-block;
+  padding-left: 30px;
+}
+ 
 .livros img {
   width: 300px;
   height: 350px;
@@ -80,6 +96,7 @@
   font-size: 40px;
   transition: 0.25s;
 }
+
 .livro1:hover {
   transform: scale(1.1);
 }
