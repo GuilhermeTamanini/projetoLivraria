@@ -6,10 +6,16 @@ import CadastroView from "../views/CadastroView.vue";
 import EntreView from "../views/EntreView.vue";
 import EditoraView from "../views/EditoraView.vue";
 import CategoriaView from "../views/CategoriaView.vue";
+import AutorView from "../views/AutorView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
+    {
+      path:"/autor",
+      name:"autor",
+      component:AutorView,
+    },
     {
       path:"/categorias",
       name:"categorias",

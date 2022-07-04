@@ -3,7 +3,7 @@
     <div class="container-fluid">
       <RouterLink class="navbar-brand" to="/cadastros"
         ><img
-          src="https://play-lh.googleusercontent.com/PM1Ig_PtVUrhmgnwqnl8zBBeg02HeELpihzMHXQ44ZObjfGgVwkwxsBF26EWTV9_Unk"
+          src="https://www.intel.com.br/etc.clientlibs/settings/wcm/designs/intel/clientlibs/arkLibs/resources/img/PMP_Partner_Member_Card.png"
           alt=""
       /></RouterLink>
       <RouterLink class="navbar-brand" to="/">Home</RouterLink>
@@ -50,24 +50,31 @@
                   >Categorias</RouterLink
                 >
               </li>
+              <li>
+                <RouterLink class="dropdown-item" to="autor">autor</RouterLink>
+              </li>
             </ul>
           </li>
         </ul>
-        <div><RouterLink class="navbar-brand" to="/historico">Histórico</RouterLink></div>
+        <div>
+          <RouterLink class="navbar-brand" to="/historico"
+            >Histórico</RouterLink
+          >
+        </div>
       </div>
     </div>
   </nav>
 </template>
 <style>
-a img {
-  width: 70px;
-  height: 70px;
-}
-nav div {
-  padding-left: 40px;
-}
-a {
-  color: white;
-  text-decoration: none;
-}
+  a img {
+    width: 120px;
+    height: 70px;
+  }
+  nav div {
+    padding-left: 40px;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+  }
 </style>

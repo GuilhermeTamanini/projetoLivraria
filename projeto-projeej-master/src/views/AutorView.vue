@@ -3,12 +3,10 @@ import { v4 as uuid } from "uuid";
 export default {
   data() {
     return {
-      novas_categorias: "",
-      nova_descricao: "",
+      novo_autor: "",
       cadastros: [
         {
-          categorias:"Jefferson",
-          descricao:"huehuehuheuheuheuheuhe",
+          autor: "Thomas",
         },
       ],
     };
@@ -19,10 +17,9 @@ export default {
         const novo_id = uuid();
         this.cadastros.push({
           id: novo_id,
-          categorias: this.novas_categorias,
-          descricao: this.nova_descricao,
+          autor: this.novo_autor,
         });
-        this.novas_categorias = "";
+        this.novo_autor = "";
       }
     },
     excluir(cadastro) {
@@ -37,12 +34,7 @@ export default {
     <div class="title"></div>
   </div>
   <div class="form-input">
-    <input
-      type="text"
-      placeholder="Nome da categoria"
-      v-model="novas_categorias"
-    />
-    <input type="text" placeholder="descrição" v-model="nova_descricao">
+    <input type="text" placeholder="Nome do autor" v-model="novo_autor" />
     <button @click="salvar">salvar</button>
   </div>
   <div class="list-items">
@@ -50,16 +42,14 @@ export default {
       <thead>
         <tr>
           <!-- <th scope="col">ID</th> -->
-          <th scope="col">Categorias</th>
-          <th scope="col">Descrição</th>
+          <th scope="col">autor</th>
           <th id="excluir-editora" scope="col">Excluir</th>
         </tr>
       </thead>
       <tbody>
         <tr v-for="cadastro in cadastros" :key="cadastro.id">
           <!-- <td scope="row">{{ cadastro.id }}</td> -->
-          <td>{{ cadastro.categorias }}</td>
-          <td> {{ cadastro.descricao }}</td>
+          <td>{{ cadastro.autor }}</td>
           <td>
             <button @click="excluir(cadastro)">Excluir</button>
           </td>
@@ -68,18 +58,3 @@ export default {
     </table>
   </div>
 </template>
-<style>
-
-.table {
-  background-color: white;
-}
-td button{
-  background-color: rgb(187, 184, 184);
-}
-#table-editora {
-  text-align: center;
-}
-#excluir-editora {
-  padding-left:7px 
-}
-</style>
