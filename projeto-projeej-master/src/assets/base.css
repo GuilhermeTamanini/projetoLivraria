@@ -47,7 +47,7 @@ body {
   background-color: rgb(255, 255, 255);
   font-weight: bold;
   color: rgb(0, 0, 0);
-  border: 1px solid black;
+  border: 1px solid white;
   border-radius: 10px;
   width: 15%;
   margin: 4px;
@@ -58,37 +58,3 @@ body {
   justify-content: center;
   
 }
-
-/* table {
-  width: 70%;
-  border: 1px solid black;
-  border-collapse: collapse;
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-table thead {
-  background-color: white;
-  color: black;
-  width: 50px;
-  height: 40px;
-}
-
-table thead th {
-  font-weight: bolder;
-}
-
-table tbody tr:nth-child(odd) {
-  background-color: black;
-  color: white;
-}
-table tbody tr {
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
-  height: 40px;
-}
-
-a { 
-  text-decoration: none;
-  color:white;
-} */

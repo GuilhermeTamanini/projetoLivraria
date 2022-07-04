@@ -178,6 +178,7 @@ export default {
   background-color: white;
 }
 td button{
-  background-color: rgb(187, 184, 184);
+  background-color: rgb(221, 220, 220);
+  border-radius: 20px;
 }
 </style>
